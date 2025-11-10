@@ -1,0 +1,25 @@
+# Build artifacts
+bin/
+obj/
+*.exe
+*.o
+*.a
+*.so
+
+# Data files (runtime generated)
+data/*.dat
+
+# VS Code
+.vscode/launch.json
+.vscode/settings.json
+.vscode/.ropeproject/
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db

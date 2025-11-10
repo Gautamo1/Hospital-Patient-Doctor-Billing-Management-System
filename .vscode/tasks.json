@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build hms_project (PowerShell)",
+            "type": "shell",
+            "command": "powershell",
+            "args": ["-NoProfile","-ExecutionPolicy","Bypass","-File","${workspaceFolder}\\build.ps1","-Action","build"],
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Run hms_project (PowerShell)",
+            "type": "shell",
+            "command": "powershell",
+            "args": ["-NoProfile","-ExecutionPolicy","Bypass","-Command","Start-Process -NoNewWindow -FilePath \"${workspaceFolder}\\hms_project.exe\" -Wait"],
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        }
+    ]
+}
